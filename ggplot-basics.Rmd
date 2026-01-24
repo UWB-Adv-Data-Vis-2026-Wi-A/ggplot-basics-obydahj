@@ -44,6 +44,16 @@ p + geom_point(mapping = aes(color = continent)) +
 
 Continue practicing by accessing an unfamiliar data set from another package.
 You can load a dataset of your choice to show you can build a graphic using ggplot layers.
+```{r}
+
+ggplot(data = mpg, aes(x = manufacturer, fill = class)) +
+  geom_bar() +
+  labs(title = "Count of the Manufacturer of Car")
+  
+
+
+
+```
 Here are some sample data sets [https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
 
 
