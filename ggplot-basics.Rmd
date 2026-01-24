@@ -48,7 +48,8 @@ You can load a dataset of your choice to show you can build a graphic using ggpl
 
 ggplot(data = mpg, aes(x = manufacturer, fill = class)) +
   geom_bar() +
-  labs(title = "Count of the Manufacturer of Car")
+  labs(title = "Count of the Manufacturer of Car") +
+  theme(axis.text.x = element_text( angle = 60))
   
 
 
